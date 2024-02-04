@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+        <title>Video Embedded Webpage</title>
+
+        <!--Google Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+	    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;700&display=swap" rel="stylesheet">
+
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                width: 1350px;
+                margin: auto;
+                align-items: center;
+                background-color: bisque;
+            }
+
+            #grid {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .flex {
+                display: flex;
+                justify-content: space-between;
+                margin: 100px 15px;
+            }
+
+            #grid > .flex:nth-child(even) {
+                flex-direction: row-reverse;
+            }
+
+            #text {
+                margin: 0 20px;
+                text-align: justify;
+            }
+
+            #media video{
+                object-fit: cover;
+                border-radius: 1rem;
+            }
+
+            #line {
+                color: lightcoral;
+                height: 2.5px;
+                background-color: lightcoral;
+                border: none;
+            }
+        </style>
+    </head>
+    <body>
+        <section id="feature">
+            <div id="content">
+                <header>
+                    <h1>Nature's Symphony</h1>
+                </header>
+
+                <!-- Images and Related text -->
+                <hr id="line">
+                <div id="grid">
+                    <div class="flex">
+                        <div id="text">
+                            <h3>Floral Bliss</h3>
+                            <p>
+                                Immerse yourself in the vibrant hues and graceful movements of 
+                                blooming flowers and swaying trees, capturing the essence of 
+                                nature's floral symphony.
+                            </p>
+                        </div>
+                        <div id="media">
+                            <video src="floral.mp4" width="650" controls loop></video>
+                        </div>
+                    </div>
+                    <hr id="line">
+                    <div class="flex">
+                        <div id="media">
+                            <video src="water.mp4" width="650" controls loop></video>
+                        </div>
+                        <div id="text">
+                            <h3>Rhythmic Water Flow</h3>
+                            <p>
+                                Experience the soothing cadence of nature as videos showcase the 
+                                mesmerizing flow of rivers, cascading waterfalls, and gentle waves 
+                                in a harmonious dance.
+                            </p>
+                        </div>
+                    </div>
+                    <hr id="line">
+                    <div class="flex">
+                        <div id="text">
+                            <h3>Sunrise Serenity</h3>
+                            <p>
+                                Witness the tranquil beauty of dawn through time-lapse videos, where 
+                                the sun paints the sky with hues of warmth, creating a serene symphony 
+                                of light and shadows.
+                            </p>
+                        </div>
+                        <div id="media">
+                            <video src="sunrise.mp4" width="650" controls loop></video>
+                        </div>
+                    </div>
+                    <hr id="line">
+                    <div class="flex">
+                        <div id="media">
+                            <video src="forest.mp4" width="650" controls loop></video>
+                        </div>
+                        <div id="text">
+                            <h3>Forest Symphony</h3>
+                            <p>
+                                Explore the enchanting world of wildlife and birds in their natural 
+                                habitats, revealing the harmonious coexistence of diverse species within 
+                                the lush embrace of a forest.
+                            </p>
+                        </div>
+                    </div>
+                    <hr id="line">
+                    <div class="flex">
+                        <div id="text">
+                            <h3>Seasonal Transitions</h3>
+                            <p>
+                                Journey through the changing seasons in a seamless dance, as videos capture 
+                                the delicate and harmonious transitions between the rebirth of spring, 
+                                the warmth of summer, the colors of autumn, and the stillness of winter.
+                            </p>
+                        </div>
+                        <div id="media">
+                            <video src="season.mp4" width="650" controls loop></video>
+                        </div>
+                    </div>
+                    <hr id="line">
+                    <div class="flex">
+                        <div id="media">
+                            <video src="celestial.mp4" width="650" controls loop></video>
+                        </div>
+                        <div id="text">
+                            <h3>Celestial Harmony</h3>
+                            <p>
+                                Gaze upon the celestial wonders above with time-lapse videos of stars, 
+                                moon phases, and cosmic events, portraying the majestic and harmonious 
+                                dance of the night sky.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+    </body>
+</html>
